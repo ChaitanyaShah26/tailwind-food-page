@@ -4,16 +4,16 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='text-gray-600'>
         <div>
           <nav>
             <div>
-              <h1>
+              <h1 className='text-red-900 font-bold uppercase p-4 border-b border-gray-100'>
                 <a href="/">Food Page</a>
               </h1>
             </div>
             <ul>
-              <li>
+              <li className='text-gray-800 font-medium'>
                 <a href='#'><span>Home</span></a>
               </li>
               <li>
@@ -26,21 +26,21 @@ function App() {
           </nav>
         </div>
 
-        <main>
+        <main className='px-16 py-6'>
           <div>
             <a href='#'>Log In</a>
             <a href='#'>Sign Up</a>
           </div>
 
           <header>
-            <h2>Recipes</h2>
-            <h3>For Food Lovers</h3>
+            <h2 className='text-red-600 text-6xl font-semibold'>Recipes</h2>
+            <h3 className='text-red-400 text-2xl font-semibold'>for Food Lovers</h3>
           </header>
 
           <div>
-            <h4>Latest Recipes</h4>
+            <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>Latest Recipes</h4>
 
-            <div>
+            <div className='mt-8'>
               <div>
                 <img src="" alt=""></img>
                 <div>
@@ -50,8 +50,8 @@ function App() {
               </div>
             </div>
 
-            <h4>Most Popular Recipes</h4>
-            <div>
+            <h4 className='font-bold mt-12 pb-2 border-b border-gray-200'>Most Popular Recipes</h4>
+            <div className='mt-8'>
 
             </div>
 

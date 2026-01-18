@@ -20,9 +20,8 @@ function App() {
                 <svg className='w-6' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
               </div>
             </div>
-            <ul className={`text-sm mt-6 md:block ${
-              isMenuOpen ? 'block opacity-100' : 'hidden opacity-0'
-            }`} >
+            <ul className={`text-sm mt-6 ${
+              isMenuOpen ? 'block' : 'hidden'} md:block`} >
               <li className='text-gray-800 font-medium py-1'>
                 <a href='#' className='px-4 flex justify-end border-r-4 border-rose-400'>
                   <span>Home

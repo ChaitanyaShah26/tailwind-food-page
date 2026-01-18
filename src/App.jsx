@@ -1,5 +1,12 @@
 import { useState } from 'react';
 import './App.css';
+import { Card } from './components/Card';
+import burgerImg from './assets/burger.jpg';
+import pancakesImg from './assets/pancakes.jpg';
+import pastaImg from './assets/pasta.jpg';
+import pavBhajiImg from './assets/pav-bhaji.jpg';
+import pizzaImg from './assets/pizza.png';
+
 
 function App() {
 
@@ -57,41 +64,20 @@ function App() {
 
           <div>
             <h4 className='font-bold mt-12 pb-2 border-b border-gray-200 font-mono'>Latest Recipes</h4>
-
-            <div className='mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
-
-              <div className='card'>
-                <img src="src\assets\pancakes.jpg" alt="pancakes" className='w-full h-32 sm:h-48 object-cover'></img>
-                <div className='m-4'>
-                  <span className='font-bold'>Pancakes</span>
-                  <span className='block text-gray-500 text-sm'>Recipe by XYZ</span>
-                </div>
-                <div className='badge'>
-                  <svg className='w-5 inline-block' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                  <span>25 mins.</span>
-                </div>
-              </div>
-
-              <div className='card'>
-                <img src="src\assets\pizza.png" alt="pizza" className='w-full h-32 sm:h-48 object-cover'></img>
-                <div className='m-4'>
-                  <span className='font-bold'>Pizza</span>
-                  <span className='block text-gray-500 text-sm'>Recipe by XYZ</span>
-                </div>
-                <div className='badge'>
-                  <span>25 mins.</span>
-                </div>
-              </div>
-
+            <div className='card-grid'>
+              <Card src={burgerImg} alt={"Burger"} name={"Burger"} time={"30"}/>
+              <Card src={pancakesImg} alt={"Pancake"} name={"Pancake"} time={"20"}/>
             </div>
 
             <h4 className='font-bold mt-12 pb-2 border-b border-gray-200 font-mono'>Most Popular Recipes</h4>
-            <div className='mt-8'>
-
+            <div className='card-grid'>
+              <Card src={pastaImg} alt={"Pasta"} name={"Pasta"} time={"30"}/>
+              <Card src={pavBhajiImg} alt={"Pav Bhaji"} name={"Pav Bhaji"} time={"45"}/>
+              <Card src={pizzaImg} alt={"Pizza"} name={"Pizza"} time={"40"}/>
             </div>
 
 
-            <div className='flex justify-center'>
+            <div className='flex justify-center py-8 mt-8'>
               <button className='bg-rose-400 text-white btn hover:shadow-inner transform hover:scale-110 transition ease-out duration-400'>Load More</button>
             </div>
           </div>

@@ -46,8 +46,8 @@ function App() {
 
         <main className='px-16 py-6 bg-gray-100 md:col-span-4'>
           <div className='flex justify-center md:justify-end'>
-            <a href='#' className='text-rose-400 btn border-rose-400 border-2 hover:bg-rose-400 hover:text-white'>Log In</a>
-            <a href='#' className='text-rose-400 ml-4 btn border-rose-400 border-2 hover:bg-rose-400 hover:text-white'>Sign Up</a>
+            <a href='#' className='text-rose-400 btn border-rose-400 border-2 hover:bg-rose-400 hover:text-white transition ease-out duration-400'>Log In</a>
+            <a href='#' className='text-rose-400 ml-4 btn border-rose-400 border-2 hover:bg-rose-400 hover:text-white transition ease-out duration-400'>Sign Up</a>
           </div>
 
           <header>
@@ -92,7 +92,7 @@ function App() {
 
 
             <div className='flex justify-center'>
-              <button className='bg-rose-400 text-white btn hover:shadow-inner'>Load More</button>
+              <button className='bg-rose-400 text-white btn hover:shadow-inner transform hover:scale-110 transition ease-out duration-400'>Load More</button>
             </div>
           </div>
 
